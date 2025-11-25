@@ -1,0 +1,61 @@
+/* Основные стили, премиальная черно-бело-золотая палитра */
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--tg-theme-bg-color, #fff);
+  color: var(--tg-theme-text-color, #000);
+}
+/* Кнопки - золотой акцент */
+button, .accent {
+  background: #FFD700;
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+/* Категории: плитки с строгим черно-белым-контуром */
+.categoryTile {
+  display: block;
+  margin: 15px 12px;
+  padding: 24px;
+  text-align: center;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  background: var(--tg-theme-bg-color, #fff);
+  color: var(--tg-theme-text-color, #000);
+  font-size: 16px;
+  font-weight: 600;
+  transition: box-shadow 0.2s;
+}
+.categoryTile:hover {
+  box-shadow: 0 0 8px #FFD70033;
+}
+/* сетка категорий */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+}
+/* product list, cards */
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.productCard {
+  background: #fff;
+  color: #232323;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.productCard img {
+  max-width: 80px;
+  max-height: 80px;
+  display: block;
+  margin: 0 auto 8px;
+}
